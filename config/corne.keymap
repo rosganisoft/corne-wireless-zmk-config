@@ -60,8 +60,22 @@
             >;
         };
 
-        extra_1 { status = "reserved"; };
+        layer_3 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &tog 4  &trans  &trans    &trans  &trans  &trans
+            >;
+        };
 
-        extra_2 { status = "reserved"; };
+        layer_4 {
+            bindings = <
+&bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans  &trans
+&bt BT_CLR_ALL  &kp A         &kp S         &kp D         &kp F         &kp G           &trans  &trans  &trans  &trans  &trans  &trans
+&trans          &kp Z         &kp X         &kp C         &kp V         &kp B           &trans  &trans  &trans  &trans  &trans  &trans
+                                            &to 0         &trans        &kp SPACE       &trans  &trans  &trans
+            >;
+        };
     };
 };
