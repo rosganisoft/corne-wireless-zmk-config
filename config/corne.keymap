@@ -22,9 +22,12 @@
 / {
     behaviors {
         new_behavior: new_behavior {
-            compatible = "zmk,behavior-mouse-key-press";
+            compatible = "zmk,behavior-input-two-axis";
             label = "NEW_BEHAVIOR";
             #binding-cells = <1>;
+            x-input-code = <5>;
+            y-input-code = <(-5)>;
+            time-to-max-speed-ms = <300>;
         };
     };
 
