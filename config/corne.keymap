@@ -74,7 +74,7 @@
             bindings = <
 &bt BT_CLR      &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans    &kp UP_ARROW    &trans           &trans     &trans
 &bt BT_CLR_ALL  &kp A         &kp S         &kp D         &kp F         &kp G           &trans  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans     &trans
-&trans          &kp Z         &kp X         &kp C         &kp V         &kp B           &trans  &trans    &trans          &trans           &kp SLASH  &trans
+&kp LCTRL       &kp Z         &kp X         &kp C         &kp V         &kp B           &trans  &trans    &trans          &trans           &kp SLASH  &trans
                                             &to 0         &trans        &kp SPACE       &trans  &trans    &trans
             >;
         };
