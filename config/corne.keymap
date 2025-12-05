@@ -20,14 +20,6 @@
             time-to-max-speed-ms = <300>;
         };
 
-        PowerOffSoft: PowerOffSoft {
-            compatible = "zmk,behavior-soft-off";
-            label = "POWEROFFSOFT";
-            #binding-cells = <0>;
-            hold-time-ms = <500>;
-            split-peripheral-off-on-press;
-        };
-
         EscTab: EscTab {
             compatible = "zmk,behavior-tap-dance";
             label = "ESCTAB";
