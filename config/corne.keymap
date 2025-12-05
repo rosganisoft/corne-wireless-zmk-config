@@ -19,6 +19,23 @@
             y-input-code = <(-5)>;
             time-to-max-speed-ms = <300>;
         };
+
+        PowerOff: PowerOff {
+            compatible = "zmk,behavior-soft-off";
+            label = "POWEROFF";
+            #binding-cells = <0>;
+            hold-time-ms = <5000>;
+            split-peripheral-off-on-press;
+        };
+    };
+
+    macros {
+        m1: m1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(B) &kp U &kp A &kp T &kp SPACE &kp A &kp R &kp T &kp I &kp K &kp E &kp L &kp SPACE &kp B &kp E &kp R &kp G &kp A &kp Y &kp A &kp SPACE &kp S &kp U &kp R &kp A &kp T &kp SPACE &kp K &kp A &kp B &kp A &kp R &kp SPACE &kp B &kp E &kp R &kp B &kp A &kp H &kp A &kp S &kp A &kp SPACE &kp LS(I) &kp N &kp D &kp O &kp N &kp E &kp S &kp I &kp A &kp SPACE &kp B &kp E &kp R &kp D &kp A &kp S &kp A &kp R &kp K &kp A &kp N &kp SPACE &kp D &kp A &kp T &kp A &kp SPACE &kp D &kp A &kp N &kp SPACE &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp S &kp I &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp I &kp K &kp U &kp T &kp SPACE &kp I &kp N &kp I &kp COLON>;
+            label = "M1";
+        };
     };
 
     keymap {
