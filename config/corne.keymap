@@ -20,21 +20,81 @@
             time-to-max-speed-ms = <300>;
         };
 
-        PowerOff: PowerOff {
+        PowerOffSoft: PowerOffSoft {
             compatible = "zmk,behavior-soft-off";
-            label = "POWEROFF";
+            label = "POWEROFFSOFT";
             #binding-cells = <0>;
-            hold-time-ms = <5000>;
+            hold-time-ms = <500>;
             split-peripheral-off-on-press;
+        };
+
+        EscTab: EscTab {
+            compatible = "zmk,behavior-tap-dance";
+            label = "ESCTAB";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp ESC>;
+
+            tapping-term-ms = <200>;
+        };
+
+        SingleQuote: SingleQuote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "SINGLEQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <200>;
         };
     };
 
     macros {
-        m1: m1 {
+        BuatTulisan: BuatTulisan {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&none &kp LS(B) &kp U &kp A &kp T &kp SPACE &kp A &kp R &kp T &kp I &kp K &kp E &kp L &kp SPACE &kp B &kp E &kp R &kp G &kp A &kp Y &kp A &kp SPACE &kp S &kp U &kp R &kp A &kp T &kp SPACE &kp K &kp A &kp B &kp A &kp R &kp SPACE &kp B &kp E &kp R &kp B &kp A &kp H &kp A &kp S &kp A &kp SPACE &kp LS(I) &kp N &kp D &kp O &kp N &kp E &kp S &kp I &kp A &kp SPACE &kp B &kp E &kp R &kp D &kp A &kp S &kp A &kp R &kp K &kp A &kp N &kp SPACE &kp D &kp A &kp T &kp A &kp SPACE &kp D &kp A &kp N &kp SPACE &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp S &kp I &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp I &kp K &kp U &kp T &kp SPACE &kp I &kp N &kp I &kp COLON>;
-            label = "M1";
+            bindings = <&none &kp B &kp U &kp A &kp T &kp SPACE &kp A &kp R &kp T &kp I &kp K &kp E &kp L &kp SPACE &kp B &kp E &kp R &kp G &kp A &kp Y &kp A &kp SPACE &kp S &kp U &kp R &kp A &kp T &kp SPACE &kp K &kp A &kp B &kp A &kp R &kp SPACE &kp B &kp E &kp R &kp B &kp A &kp H &kp A &kp S &kp A &kp SPACE &kp I &kp N &kp D &kp O &kp N &kp E &kp S &kp I &kp A &kp SPACE &kp B &kp E &kp R &kp D &kp A &kp S &kp A &kp R &kp K &kp A &kp N &kp SPACE &kp D &kp A &kp T &kp A &kp SPACE &kp D &kp A &kp N &kp SPACE &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp S &kp I &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp I &kp K &kp U &kp T &kp SPACE &kp I &kp N &kp I &kp COLON>;
+            label = "BUATTULISAN";
+        };
+
+        Salam: Salam {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp S &kp S &kp A &kp L &kp A &kp M &kp U &kp A &kp L &kp A &kp I &kp K &kp U &kp M &kp SPACE &kp W &kp A &kp R &kp A &kp H &kp M &kp A &kp T &kp U &kp L &kp L &kp A &kp H &kp I &kp SPACE &kp W &kp A &kp B &kp A &kp R &kp A &kp K &kp A &kp T &kp U &kp H>;
+            label = "SALAM";
+        };
+
+        AlterJudul: AlterJudul {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp B &kp U &kp A &kp T &kp SPACE &kp A &kp L &kp T &kp E &kp R &kp N &kp A &kp T &kp I &kp F &kp SPACE &kp J &kp U &kp D &kp U &kp L &kp SPACE &kp U &kp N &kp T &kp U &kp K &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp D &kp I &kp SPACE &kp A &kp T &kp A &kp S>;
+            label = "ALTERJUDUL";
+        };
+
+        Inalilahi: Inalilahi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(I) &kp N &kp N &kp A &kp L &kp I &kp L &kp L &kp A &kp H &kp I &kp SPACE &kp W &kp A &kp I &kp N &kp N &kp A &kp I &kp L &kp L &kp A &kp I &kp H &kp I &kp SPACE &kp R &kp O &kp J &kp I &kp U &kp U &kp N>;
+            label = "INALILAHI";
+        };
+
+        Almdulilah: Almdulilah {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp L &kp H &kp A &kp M &kp D &kp U &kp L &kp I &kp L &kp L &kp A &kp H &kp I &kp SPACE &kp R &kp A &kp B &kp B &kp I &kp L &kp SPACE &kp SQT &kp A &kp L &kp A &kp M &kp I &kp I &kp N>;
+            label = "ALMDULILAH";
+        };
+
+        Walaikum: Walaikum {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(W) &kp A &kp SQT &kp A &kp L &kp A &kp I &kp K &kp U &kp M &kp U &kp S &kp S &kp A &kp L &kp A &kp M &kp SPACE &kp W &kp A &kp R &kp A &kp H &kp M &kp A &kp T &kp U &kp L &kp L &kp A &kp H &kp I &kp SPACE &kp W &kp A &kp B &kp A &kp R &kp A &kp K &kp A &kp T &kp U &kp H>;
+            label = "WALAIKUM";
+        };
+
+        Aamiin: Aamiin {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp A &kp M &kp I &kp I &kp N &kp SPACE &kp LS(Y) &kp A &kp SPACE &kp LS(R) &kp O &kp B &kp B &kp A &kp L &kp SPACE &kp LS(A) &kp L &kp A &kp M &kp I &kp I &kp N>;
+            label = "AAMIIN";
         };
     };
 
@@ -50,10 +110,10 @@
 
             display-name = "Base";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&kp LCTRL  &kp A  &kp S  &kp D     &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &kp RETURN
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp DEL
-                         &kp LGUI  &mo 2  &kp SPACE    &kp SPACE  &mo 1  &mo 3
+&kp TAB          &kp Q  &kp W  &kp E                  &kp R  &kp T        &kp Y      &kp U  &kp I      &kp O    &kp P     &kp BSPC
+&mt LSHIFT CAPS  &kp A  &kp S  &kp D                  &kp F  &kp G        &kp H      &kp J  &kp K      &kp L    &kp SEMI  &mt RCTRL RETURN
+&kp LCTRL        &kp Z  &kp X  &kp C                  &kp V  &kp B        &kp N      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &mt RIGHT_CONTROL DELETE
+                               &mt LEFT_ALT LEFT_GUI  &mo 2  &kp SPACE    &kp SPACE  &mo 1  &mo 3
             >;
         };
 
@@ -66,10 +126,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans    &trans  &trans       &trans   &kp INS         &kp UP_ARROW    &kp HOME   &kp PRINTSCREEN   &kp C_VOLUME_UP
-&trans      &trans  &trans  &trans    &trans  &trans       &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp SINGLE_QUOTE  &kp C_VOL_DN
-&kp LSHFT   &trans  &trans  &trans    &trans  &trans       &trans   &trans          &trans          &kp END    &trans            &kp K_MUTE
-                            &kp LGUI  &trans  &kp SPACE    &kp RET  &trans          &tog 0
+&kp ESCAPE  &Aamiin      &Walaikum   &trans    &trans  &AlterJudul     &trans   &kp INS         &kp UP_ARROW    &kp HOME   &kp PRINTSCREEN   &kp C_VOLUME_UP
+&trans      &Salam       &trans      &trans    &trans  &trans          &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp SINGLE_QUOTE  &kp C_VOL_DN
+&kp LSHFT   &Almdulilah  &Inalilahi  &trans    &trans  &BuatTulisan    &trans   &trans          &trans          &kp END    &trans            &kp K_MUTE
+                                     &kp LGUI  &trans  &kp SPACE       &kp RET  &trans          &tog 0
             >;
         };
 
@@ -82,10 +142,10 @@
 
             display-name = "Raise";
             bindings = <
-&kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5       &kp NUMBER_6    &kp N7          &kp N8          &kp NUMBER_9     &kp NUMBER_0  &kp BSPC
-&kp F1   &kp F2        &kp F3        &kp F4        &kp F5        &kp F6       &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans        &kp ENTER
-&kp F7   &kp F8        &kp F9        &kp F10       &kp F11       &kp F12      &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &kp DEL
-                                     &kp LGUI      &tog 0        &kp SPACE    &kp SPACE       &trans          &kp BACKSPACE
+&kp ESC  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3               &kp NUMBER_4  &kp N5       &kp NUMBER_6    &kp N7          &kp N8          &kp NUMBER_9     &kp NUMBER_0  &kp BSPC
+&kp F1   &kp F2        &kp F3        &kp F4                     &kp F5        &kp F6       &msc SCRL_UP    &mkp MB1        &mmv MOVE_UP    &mkp MB2         &trans        &kp ENTER
+&kp F7   &kp F8        &kp F9        &kp F10                    &kp F11       &kp F12      &msc SCRL_DOWN  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans        &kp DEL
+                                     &mt LS(LEFT_ALT) LEFT_GUI  &tog 0        &kp SPACE    &kp SPACE       &soft_off       &kp BACKSPACE
             >;
         };
 
