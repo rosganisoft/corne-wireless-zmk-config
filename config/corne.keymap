@@ -118,10 +118,10 @@
 
             display-name = "Lower";
             bindings = <
-&kp ESCAPE  &Aamiin      &Walaikum   &trans    &trans  &AlterJudul     &trans   &kp INS         &kp UP_ARROW    &kp HOME   &kp PRINTSCREEN   &kp C_VOLUME_UP
-&trans      &Salam       &trans      &trans    &trans  &trans          &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp SINGLE_QUOTE  &kp C_VOL_DN
-&kp LSHFT   &Almdulilah  &Inalilahi  &trans    &trans  &BuatTulisan    &trans   &trans          &trans          &kp END    &trans            &kp K_MUTE
-                                     &kp LGUI  &trans  &kp SPACE       &kp RET  &trans          &tog 0
+&kp ESCAPE  &Aamiin      &Walaikum   &trans    &trans  &AlterJudul    &trans   &kp INS         &kp UP_ARROW    &kp HOME   &kp PRINTSCREEN   &kp C_VOLUME_UP
+&trans      &Salam       &trans      &trans    &trans  &trans         &trans   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp SINGLE_QUOTE  &kp C_VOL_DN
+&kp LSHFT   &Almdulilah  &Inalilahi  &trans    &trans  &Prompt        &trans   &trans          &trans          &kp END    &trans            &kp K_MUTE
+                                     &kp LGUI  &trans  &kp SPACE      &kp RET  &trans          &tog 0
             >;
         };
 
