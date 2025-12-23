@@ -89,8 +89,6 @@
             #binding-cells = <0>;
             bindings = <&kp LS(B) &kp U &kp A &kp T &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp G &kp A &kp Y &kp A &kp SPACE &kp S &kp U &kp R &kp A &kp T &kp SPACE &kp K &kp A &kp B &kp A &kp R &kp SPACE &kp B &kp A &kp H &kp A &kp S &kp A &kp SPACE &kp LS(I) &kp N &kp D &kp O &kp N &kp E &kp S &kp I &kp A &kp COMMA &kp SPACE &kp D &kp A &kp T &kp A &kp SPACE &kp D &kp A &kp N &kp SPACE &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp S &kp I &kp SPACE &kp D &kp I &kp A &kp M &kp B &kp I &kp L &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp I &kp K &kp U &kp T &kp SPACE &kp I &kp N &kp I &kp COLON>;
             label = "PROMPT";
-            tap-ms = <0>;
-            wait-ms = <0>;
         };
     };
 
