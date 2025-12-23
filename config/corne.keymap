@@ -36,7 +36,7 @@
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp S &kp S &kp A &kp L &kp A &kp M &kp U &kp A &kp L &kp A &kp I &kp K &kp U &kp M &kp SPACE &kp W &kp R &kp SPACE &kp W &kp B>;
             label = "SALAM";
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
 
         AlterJudul: AlterJudul {
@@ -45,7 +45,7 @@
             bindings = <&kp LS(B) &kp U &kp A &kp T &kp SPACE &kp A &kp L &kp T &kp E &kp R &kp N &kp A &kp T &kp I &kp F &kp SPACE &kp J &kp U &kp D &kp U &kp L &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp D &kp I &kp SPACE &kp A &kp T &kp A &kp S>;
             label = "ALTERJUDUL";
             tap-ms = <0>;
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
 
         Inalilahi: Inalilahi {
@@ -54,7 +54,7 @@
             bindings = <&kp LS(I) &kp N &kp N &kp A &kp L &kp I &kp L &kp L &kp A &kp H &kp I &kp SPACE &kp W &kp A &kp I &kp N &kp A &kp I &kp L &kp A &kp I &kp H &kp I &kp SPACE &kp R &kp O &kp J &kp I &kp U &kp N>;
             label = "INALILAHI";
             tap-ms = <0>;
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
 
         Almdulilah: Almdulilah {
@@ -63,7 +63,7 @@
             bindings = <&kp LS(A) &kp L &kp H &kp A &kp M &kp D &kp U &kp L &kp I &kp L &kp L &kp A &kp H &kp I &kp SPACE &kp R &kp A &kp B &kp B &kp I &kp L &kp SPACE &kp SQT &kp A &kp L &kp A &kp M &kp I &kp I &kp N>;
             label = "ALMDULILAH";
             tap-ms = <0>;
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
 
         Walaikum: Walaikum {
@@ -72,7 +72,7 @@
             bindings = <&kp LS(W) &kp A &kp SQT &kp A &kp L &kp A &kp I &kp K &kp U &kp M &kp U &kp S &kp S &kp A &kp L &kp A &kp A &kp M>;
             label = "WALAIKUM";
             tap-ms = <0>;
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
 
         Aamiin: Aamiin {
@@ -81,16 +81,19 @@
             bindings = <&kp LS(A) &kp A &kp M &kp I &kp I &kp N &kp SPACE &kp LS(Y) &kp A &kp SPACE &kp LS(R) &kp O &kp B &kp B &kp A &kp L &kp SPACE &kp LS(A) &kp L &kp A &kp M &kp I &kp I &kp N>;
             label = "AAMIIN";
             tap-ms = <0>;
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
 
         Prompt: Prompt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(B) &kp U &kp A &kp T &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp G &kp A &kp Y &kp A &kp SPACE &kp S &kp U &kp R &kp A &kp T &kp SPACE &kp K &kp A &kp B &kp A &kp R &kp SPACE &kp B &kp A &kp H &kp A &kp S &kp A &kp SPACE &kp LS(I) &kp N &kp D &kp O &kp N &kp E &kp S &kp I &kp A &kp COMMA &kp SPACE &kp D &kp A &kp T &kp A &kp SPACE &kp D &kp A &kp N &kp SPACE &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp S &kp I &kp SPACE &kp D &kp I &kp A &kp M &kp B &kp I &kp L &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp I &kp K &kp U &kp T &kp SPACE &kp I &kp N &kp I &kp COLON>;
+            bindings =
+                <&kp LS(B) &kp U &kp A &kp T &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp G &kp A &kp Y &kp A &kp SPACE &kp S &kp U &kp R &kp A &kp T &kp SPACE &kp K &kp A &kp B &kp A &kp R &kp SPACE &kp B &kp A &kp H &kp A &kp S &kp A &kp SPACE &kp LS(I) &kp N &kp D &kp O &kp N &kp E &kp S &kp I &kp A &kp COMMA &kp SPACE &kp D &kp A &kp T &kp A &kp SPACE &kp D &kp A &kp N &kp SPACE &kp I &kp N &kp F &kp O &kp R &kp M &kp A &kp S &kp I &kp SPACE &kp D &kp I &kp A &kp M &kp B &kp I &kp L &kp SPACE &kp D &kp A &kp R &kp I &kp SPACE &kp T &kp U &kp L &kp I &kp S &kp A &kp N &kp SPACE &kp B &kp E &kp R &kp I &kp K &kp U &kp T &kp SPACE &kp I &kp N &kp I &kp COLON>,
+                <&macro_press>;
+
             label = "PROMPT";
             tap-ms = <0>;
-            wait-ms = <(-200)>;
+            wait-ms = <0>;
         };
     };
 
