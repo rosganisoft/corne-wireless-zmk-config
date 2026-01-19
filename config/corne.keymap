@@ -28,6 +28,14 @@
 
             tapping-term-ms = <180>;
         };
+
+        SoftOFFKeyboard: SoftOFFKeyboard {
+            compatible = "zmk,behavior-soft-off";
+            label = "SOFTOFFKEYBOARD";
+            #binding-cells = <0>;
+            hold-time-ms = <4000>;
+            split-peripheral-off-on-press;
+        };
     };
 
     macros {
