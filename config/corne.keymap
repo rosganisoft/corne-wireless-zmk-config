@@ -159,14 +159,14 @@
 
         Tabs {
             bindings = <&kp TAB>;
-            key-positions = <0 1>;
+            key-positions = <1 2>;
             layers = <0>;
             timeout-ms = <50>;
         };
 
         EscC {
             bindings = <&kp ESC>;
-            key-positions = <0 1 2>;
+            key-positions = <1 2 3>;
             timeout-ms = <50>;
             layers = <0>;
         };
