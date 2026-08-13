@@ -152,6 +152,21 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        Tabs {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        EscC {
+            bindings = <&kp ESC>;
+            key-positions = <0 1 2>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
