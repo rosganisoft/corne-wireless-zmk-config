@@ -29,14 +29,6 @@
             tapping-term-ms = <180>;
         };
 
-        SoftOFFKeyboard: SoftOFFKeyboard {
-            compatible = "zmk,behavior-soft-off";
-            label = "SOFTOFFKEYBOARD";
-            #binding-cells = <0>;
-            hold-time-ms = <4000>;
-            split-peripheral-off-on-press;
-        };
-
         HMShiftR: HMShiftR {
             compatible = "zmk,behavior-hold-tap";
             label = "HMSHIFTR";
@@ -169,6 +161,12 @@
             key-positions = <1 2 3>;
             timeout-ms = <50>;
             layers = <0>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <0 13>;
+            timeout-ms = <50>;
         };
     };
 
